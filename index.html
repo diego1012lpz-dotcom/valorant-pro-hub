@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALORANT PRO-HUB | Full Agent Database</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span class="ticker-item">LIVE PATCH: 12.08</span>
+            <span class="ticker-item">NEW MAP: CORRODE ACTIVE</span>
+            <span class="ticker-item">SOVA PICK RATE: 14.2%</span>
+            <span class="ticker-item">META SHIFT: DUAL-CONTROLLER DOMINANCE</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="hero">
+            <h1>VALORANT <span class="red">PRO-HUB</span></h1>
+            <p>Complete 2026 Agent Tactics & Lineup Database</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="section-title"><h2>SELECT AN AGENT</h2></div>
+        
+        <div class="agent-grid">
+            <div class="agent-card" onclick="showAgent('sova')"><h3>SOVA</h3><small>Initiator</small></div>
+            <div class="agent-card" onclick="showAgent('jett')"><h3>JETT</h3><small>Duelist</small></div>
+            <div class="agent-card" onclick="showAgent('clove')"><h3>CLOVE</h3><small>Controller</small></div>
+            <div class="agent-card" onclick="showAgent('kj')"><h3>KILLJOY</h3><small>Sentinel</small></div>
+            <div class="agent-card" onclick="showAgent('omen')"><h3>OMEN</h3><small>Controller</small></div>
+            <div class="agent-card" onclick="showAgent('viper')"><h3>VIPER</h3><small>Controller</small></div>
+            <div class="agent-card" onclick="showAgent('raze')"><h3>RAZE</h3><small>Duelist</small></div>
+            <div class="agent-card" onclick="showAgent('gekko')"><h3>GEKKO</h3><small>Initiator</small></div>
+            <div class="agent-card" onclick="showAgent('cypher')"><h3>CYPHER</h3><small>Sentinel</small></div>
+            <div class="agent-card" onclick="showAgent('iso')"><h3>ISO</h3><small>Duelist</small></div>
+        </div>
+
+        <main id="details-panel" class="details-card">
+            <div id="default-msg"><h3>Click an agent icon above to load pro-data...</h3></div>
+
+            <div id="sova" class="agent-content">
+                <div class="content-header"><h2>SOVA <span class="badge">S-TIER</span></h2></div>
+                <div class="stats-grid">
+                    <div class="stat-box"><h4>Win Rate</h4><p>54%</p></div>
+                    <div class="stat-box"><h4>Difficulty</h4><div class="bar"><div class="progress" style="width: 90%;"></div></div></div>
+                </div>
+                <div class="lineup-section">
+                    <h3>2026 Meta Lineups</h3>
+                    <p><strong>Abyss A-Site:</strong> Stand on the bridge corner, aim at the glowing lantern. 2-bar charge. Scans back-site perfectly.</p>
+                    <p><strong>Corrode Mid:</strong> Aim at the crane pulley from spawn. Clears the main tunnel lurk.</p>
+                </div>
+            </div>
+
+            <div id="jett" class="agent-content">
+                <div class="content-header"><h2>JETT <span class="badge">A-TIER</span></h2></div>
+                <div class="stats-grid">
+                    <div class="stat-box"><h4>Win Rate</h4><p>49%</p></div>
+                    <div class="stat-box"><h4>Difficulty</h4><div class="bar"><div class="progress" style="width: 80%;"></div></div></div>
+                </div>
+                <p><strong>Entry Strategy:</strong> Use the "Double-Cloud" dash on Fracture B-site to bypass the returning Breach stuns.</p>
+            </div>
+
+            <div id="clove" class="agent-content">
+                <div class="content-header"><h2>CLOVE <span class="badge">S-TIER</span></h2></div>
+                <div class="stats-grid">
+                    <div class="stat-box"><h4>Win Rate</h4><p>52%</p></div>
+                    <div class="stat-box"><h4>Difficulty</h4><div class="bar"><div class="progress" style="width: 50%;"></div></div></div>
+                </div>
+                <p><strong>Post-Death Play:</strong> Always save your Meddle decay for the defuse sound. It's the highest value play in the 2026 meta.</p>
+            </div>
+
+            <div id="kj" class="agent-content">
+                <div class="content-header"><h2>KILLJOY <span class="badge">A-TIER</span></h2></div>
+                <p><strong>Setup:</strong> On Lotus, place the Swarm Grenades inside the revolving doors to trap aggressive attackers.</p>
+            </div>
+
+            <div id="omen" class="agent-content">
+                <div class="content-header"><h2>OMEN <span class="badge">B-TIER</span></h2></div>
+                <p><strong>Pro Tip:</strong> Use Shrouded Step to cross the "Death Gaps" in Abyss. It saves your utility and keeps you silent.</p>
+            </div>
+
+            <div id="viper" class="agent-content">
+                <div class="content-header"><h2>VIPER <span class="badge">S-TIER</span></h2></div>
+                <p><strong>Lineup:</strong> Stand at Bind A-Short, aim at the top of the 'A' sign. Orb lands perfectly on the default plant.</p>
+            </div>
+
+            <div id="raze" class="agent-content">
+                <div class="content-header"><h2>RAZE <span class="badge">A-TIER</span></h2></div>
+                <p><strong>Movement:</strong> Satchel-jumping on Corrode allows you to bypass the Salt Mine traps entirely.</p>
+            </div>
+
+            <div id="gekko" class="agent-content">
+                <div class="content-header"><h2>GEKKO <span class="badge">B-TIER</span></h2></div>
+                <p><strong>Utility:</strong> Always send Wingman to plant while you hold the "revolving door" angle on Lotus.</p>
+            </div>
+
+            <div id="cypher" class="agent-content">
+                <div class="content-header"><h2>CYPHER <span class="badge">A-TIER</span></h2></div>
+                <p><strong>Cam Spot:</strong> Place Spycam on the high wires in Fracture to see both spawn sides simultaneously.</p>
+            </div>
+
+            <div id="iso" class="agent-content">
+                <div class="content-header"><h2>ISO <span class="badge">C-TIER</span></h2></div>
+                <p><strong>Strategy:</strong> Use your Contingency shield to lead the push through the narrow tunnels of Corrode.</p>
+            </div>
+
+        </main>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
